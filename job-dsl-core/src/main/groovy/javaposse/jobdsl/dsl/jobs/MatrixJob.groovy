@@ -7,6 +7,8 @@ import javaposse.jobdsl.dsl.JobManagement
 import javaposse.jobdsl.dsl.WithXmlAction
 import javaposse.jobdsl.dsl.helpers.AxisContext
 
+import static javaposse.jobdsl.dsl.Preconditions.checkNotNull
+
 class MatrixJob extends Job {
     MatrixJob(JobManagement jobManagement) {
         super(jobManagement)
